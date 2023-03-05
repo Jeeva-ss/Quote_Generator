@@ -31,7 +31,7 @@ function showError() {
 
 function getQuote() {
     const quote = apiQuotes[Math.floor(Math.random() * apiQuotes.length)];
-    !quote.author ? (authorText.textContent = "Unknown") : (authorText.textContent = quote.author);
+    quote.author ? (authorText.textContent = quote.author) : (authorText.textContent = "Unknown!!!");
     quote.text.length > 120 ? quoteText.classList.add("long-quote") : quoteText.classList.remove("long-quote");
     quoteText.textContent = quote.text;
     hideLoader();

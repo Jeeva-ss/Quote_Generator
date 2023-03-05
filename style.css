@@ -112,6 +112,7 @@ button:active {
 	.quote-container {
 		margin: auto 10px;
 	}
+
 	.quote-text {
 		font-size: 2.5rem;
 	}
@@ -137,6 +138,7 @@ button:active {
 	.fa-quote-left {
 		font-size: 3rem;
 	}
+
 	.loader {
 		border: 8px solid #f3f3f3;
 		border-top: 8px solid #333;
@@ -144,5 +146,15 @@ button:active {
 		width: 60px;
 		height: 60px;
 		animation: spin 2s linear infinite;
+	}
+}
+
+@media screen and (max-width: 380px) {
+	.fa-twitter {
+		font-size: 1rem;
+	}
+
+	#new-quote {
+		font-size: 1rem;
 	}
 }
